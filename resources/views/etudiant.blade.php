@@ -17,9 +17,12 @@
             <th scope="col">N°</th>
             <th scope="col">Nom</th>
             <th scope="col">Prenom</th>
+            <th scope="col">Matricule</th>
+            <th scope="col">Cycle</th>
             <th scope="col">Date_naissance</th>
             <th scope="col">Email</th>
             <th scope="col">Numero</th>
+            <th scope="col">photo</th>
             <th scope="col">Date d'abonnement</th>
             <th scope="col">Action</th>
             </tr>
@@ -30,9 +33,12 @@
             <th scope="row">{{$loop->index + 1}}</th>
             <td>{{$etudiant->nom}}</td>
             <td>{{$etudiant->prenom}}</td>
+            <td>{{$etudiant->matricule}}</td>
+            <td>{{$etudiant->cycle}}</td>
             <td>{{$etudiant->age}}</td>
             <td>{{$etudiant->email}}</td>
             <td>{{$etudiant->numero}}</td>
+            <td>{{$etudiant->photo}}</td>
             <td>{{$etudiant->created_at}}</td>
             <td>
                 <a href="{{route('etudiant.edit',['etudiant'=>$etudiant->id])}}" class="btn btn-info">Editer</a>

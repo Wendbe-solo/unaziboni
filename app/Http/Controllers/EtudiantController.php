@@ -24,16 +24,23 @@ class EtudiantController extends Controller
         $request->validate([
             "nom"=>"required",
             "prenom"=>"required",
+            "matricule"=>"required",
+            "cycle"=>"required",
             "age"=>"required",
             "email"=>"required",
-            "numero"=>"required"
+            "numero"=>"required",
+            "photo"=>"required"
+            
         ]);
         Etudiant::create([
             "nom"=>$request->nom,
             "prenom"=>$request->prenom,
+            "matricule"=>$request->matricule,
+            "cycle"=>$request->cycle,
             "age"=>$request->age,
             "email"=>$request->email,
-            "numero"=>$request->numero
+            "numero"=>$request->numero,
+            "photo"=>$request->photo
         ]);
         return back()->with("success","Etudiant enregistrer avec succès");
     }
@@ -45,16 +52,22 @@ class EtudiantController extends Controller
         $request->validate([
             "nom"=>"required",
             "prenom"=>"required",
+            "matricule"=>"required",
+            "cycle"=>"required",
             "age"=>"required",
             "email"=>"required",
-            "numero"=>"required"
+            "numero"=>"required",
+            "photo"=>"required"
         ]);
         $etudiant->update([
             "nom"=>$request->nom,
             "prenom"=>$request->prenom,
+            "matricule"=>$request->matricule,
+            "cycle"=>$request->cycle,
             "age"=>$request->age,
             "email"=>$request->email,
-            "numero"=>$request->numero
+            "numero"=>$request->numero,
+            "photo"=>$request->photo
         ]);
         return back()->with("success","Etudiant modifier avec succès");
     }

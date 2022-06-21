@@ -17,9 +17,12 @@ class CreateEtudiantsTable extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
+            $table->string('matricule');
+            $table->string('cycle');
             $table->date('age');
             $table->string('email');
             $table->string('numero');
+            $table->string('photo');
             $table->timestamps();
         });
     }

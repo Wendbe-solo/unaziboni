@@ -23,9 +23,12 @@ class EtudiantFactory extends Factory
         return [
             'nom' => $this->faker->lastName,
             'prenom' => $this->faker->firstName,
+            'matricule' => $this->faker->maticule,
+            'cycle' => $this->faker->cycle,
             'age' => $this->faker->date,
             'email' => $this->faker->unique()->safeEmail(),
             'numero' => $this->faker->number,
+            'photo' => $this->faker->photo,
         ];
     }
 }

@@ -33,6 +33,16 @@
 
             </div>
             <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Matricule</label>
+                <input type="text" name="matricule" value="{{$etudiant->matricule}}" class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Cycle</label>
+                <input type="text" name="cycle" value="{{$etudiant->cycle}}" class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
                 <label for="exampleinputEmail" class="form-label">Date de naissance</label>
                 <input type="date" name="age" value="{{$etudiant->age}}" class="form-control formulaire" id="">
 
@@ -46,6 +56,11 @@
             <div class="mb-3">
                 <label for="exampleinputEmail" class="form-label">Numero</label>
                 <input type="text" name="numero" value="{{$etudiant->numero}}" class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Photo</label>
+                <input type="file" name="photo" value="{{$etudiant->photo}}" class="form-control formulaire" id="">
 
             </div>
             <button type="submit" class="btn btn-primary formula">Enregistre</button>

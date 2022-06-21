@@ -31,6 +31,16 @@
 
             </div>
             <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Matricule</label>
+                <input type="text" name="matricule" class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Cycle</label>
+                <input type="text" name="cycle" class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
                 <label for="exampleinputEmail" class="form-label">Date de naissance</label>
                 <input type="date" name="age" class="form-control formulaire" id="">
 
@@ -44,6 +54,11 @@
             <div class="mb-3">
                 <label for="exampleinputEmail" class="form-label">Numero</label>
                 <input type="text" name="numero"  class="form-control formulaire" id="">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleinputEmail" class="form-label">Photo</label>
+                <input type="file" name="photo" class="form-control formulaire" id="">
 
             </div>
             <button type="submit" class="btn btn-primary formula">Enregistre</button>
