@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EtudiantController; 
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get("/etudiant",[EtudiantController::class,"index"])->name("etudiant");
+
+Route::get("/etudiant/create",[EtudiantController::class,"create"])->name("etudiant.create");
+
+Route::get("/etudiant/{etudiant}",[EtudiantController::class,"edit"])->name("etudiant.edit");
+
+Route::post("/etudiant/create",[EtudiantController::class,"store"])->name("etudiant.ajouter");
+
+Route::delete("/etudiant/{etudiant}",[EtudiantController::class,"delete"])->name("etudiant.supprimer");
+
+Route::put("/etudiant/{etudiant}",[EtudiantController::class,"update"])->name("etudiant.update");
