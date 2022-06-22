@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -77,6 +78,22 @@
 
         <main class="py-4">
             @yield('content')
+
+            <footer id="foot">
+  <div class="fin">
+    <ul>
+    <h3> <li>CONTACT</li></h3>
+         <li>Université NAZI BONI</li>
+         <li>Tél. : (00226) 20 98 06 35</li>
+         <li>email : info@u-naziboni.bf.</li>
+         <li>Webmail : UNB Mail</li>
+    </ul>
+    <img src="{{ asset('img/slide/logoo.jpg') }}" class="pied" alt="">
+  </div>
+ <center><h5>Designer by @ Tidiane Epiphan Norbet</h5></center>
+  
+  
+        </footer>
         </main>
     </div>
 </body>

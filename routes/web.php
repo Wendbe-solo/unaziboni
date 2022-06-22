@@ -18,15 +18,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/esai', function () {
+    return view('esai');
+});
+
+
+Route::get('/directeur', function () {
+    return view('directeur');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
+
 Auth::routes();
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get("/etudiant",[EtudiantController::class,"index"])->name("etudiant");
+Route::get("/esai",[EtudiantController::class,"index"])->name("etudiant");
 
 Route::get("/etudiant/create",[EtudiantController::class,"create"])->name("etudiant.create");
 
