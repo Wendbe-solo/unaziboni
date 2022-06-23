@@ -1,14 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
+<style>
+    .dd{
+              background-image: url({{asset('ass/img/slide/slide5.jpg')}});
+  
+            }
+            .cc{
+                background-color: rgba(240, 248, 255, 0.721);
+
+
+
+            }
+</style>
+<div class="container dd">
+    <div class="row justify-content-center">
+        <div class="col-md-8 ">
+            <div class="card cc">
+                <div class="card-header">{{ __('Se connecter') }}</div>
+
+                <div class="card-body ">
+                    <form method="POST"  action="{{ route('login') }}">
                         @csrf
 
                         <div class="row mb-3">
@@ -59,7 +73,7 @@
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Mot de passe oublier?') }}
                                     </a>
                                 @endif
                             </div>
@@ -70,4 +84,6 @@
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="{{asset('./boot/js/bootstrap.bundle.min.js')}}">
 @endsection

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -46,4 +47,5 @@
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="{{asset('./boot/js/bootstrap.bundle.min.js')}}">
 @endsection

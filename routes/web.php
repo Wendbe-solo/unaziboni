@@ -14,8 +14,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
+});
+Route::get('page', function () {
+    return view('page');
+});
+Route::get('editEtudiant', function () {
+    return view('editEtudiant');
+});
+Route::get('etd', function () {
+    return view('etudiant');
+});
+
+Route::get('/', function () {
+    return view('auth.register');
+});
+Route::get('aut1', function () {
+    return view('aut1');
+});
+Route::get('ins1', function () {
+    return view('ins1');
+});
+Route::get('master', function () {
+    return view('./layouts/master');
+});
+Route::get('carnet', function () {
+    return view('carnet');
 });
 
 Auth::routes();

@@ -1,0 +1,20 @@
+.logo,img{
+    width: auto;
+    height: 115px; 
+  }
+  #logo1{
+    margin-left: 81%;
+  }
+  nav{
+    background: #570147 !important;
+  }
+  
+  
+  #header .logo img {
+    /* padding:20px ; */
+    /* margin: top 20px; */
+     max-height: 200px; 
+     
+  }
+
+  

@@ -1,0 +1,21 @@
+.fin{
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+   }
+   .pied{
+     margin-top:40px;
+   }
+   #foot{
+     background: #570147;
+   }
+   h5{
+     margin-top: 5px;
+     color:white;
+   }
+   .fin,ul,li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+   
+   }

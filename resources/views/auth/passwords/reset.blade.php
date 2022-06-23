@@ -1,10 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
+<style>
+    .dd{
+              background-image: url({{asset('ass/img/slide/slide5.jpg')}});
+  
+            }
+            .cc{
+                background-color: rgba(240, 248, 255, 0.721);
+
+
+
+            }
+</style>
+<div class="container dd">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card cc">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
@@ -62,4 +75,5 @@
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="{{asset('./boot/js/bootstrap.bundle.min.js')}}">
 @endsection

@@ -18,8 +18,32 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('./m/m.css')}}">
 </head>
 <body>
+    <section>
+    <section class="big-bg dd">
+        <style>
+            .dd{
+                background-image: url({{asset('ass/img/slide/images.jpeg')}});
+            }
+            .logo{
+                background-color: indigo;
+            }
+            .fin ul li{
+                list-style: none;
+                text-decoration: none;
+            }
+         
+        </style>
+
+        <div class="logo" >
+            <img src="{{asset('./ass/img/slide/logo.png')}}" alt="">
+            <img src="{{asset('./ass/img/slide/images3.jpg')}}" alt="" id="logo1" >
+        </div>
+    </section>
+    
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -42,7 +66,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
                                 </li>
                             @endif
 
@@ -61,7 +85,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Se deconnecter') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -79,5 +103,21 @@
             @yield('content')
         </main>
     </div>
+<section>
+<footer id="foot">
+        <div class="fin">
+          <ul>
+          <h3> <li>CONTACT</li></h3>
+               <li>Université NAZI BONI</li>
+               <li>Tél. : (00226) 20 98 06 35</li>
+               <li>email : info@u-naziboni.bf.</li>
+               <li>Webmail : UNB Mail</li>
+          </ul>
+          <img src="{{asset('./ass/img/slide/logoo.jpg')}}" class="pied" alt="">
+        </div>
+       <center><h5>Designer by @ Tidiane Epiphane Norbet</h5></center>   
+    </footer>
+</section>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

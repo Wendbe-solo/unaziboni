@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
 <div class="my-3 p-3 bg-body rounded shadow-sm">
  <h3 class="centretout">Fiche d'abonnement</h3>
 
@@ -69,3 +73,4 @@
     </div>
 
 </div>
+@endsection

@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <h3 class="border-bottom pb-2 mb-4">editer d'un etudiant</h3>
 
@@ -71,3 +75,4 @@
     </div>
 
 </div>
+@endsection

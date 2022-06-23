@@ -1,0 +1,164 @@
+/* hder footer */
+
+.logo,img{
+    width: auto;
+    height: 115px; 
+  }
+  #logo1{
+    margin-left: 81%;
+  }
+  .logo{
+    background-color: #570147 ;
+  }
+  
+  
+  #header .logo img {
+    /* padding:20px ; */
+    /* margin: top 20px; */
+     max-height: 200px; 
+     
+  }
+.a{
+  display: inline !important;
+}
+
+  
+
+  .fin{
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+   }
+   .pied{
+     margin-top:40px;
+   }
+   #foot{
+     background: #570147;
+   }
+   h5{
+     margin-top: 5px;
+     color:white;
+   }
+   .fin,ul,li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+   
+   }
+/* hder footer */
+
+
+.nomc{
+    background-color: yellowgreen;
+    width: 30%;
+    height: 15%;
+    margin-left: 35%;
+    
+
+}
+.for input{
+    display: flex;
+    width: 94%;
+    height: 25px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+
+}
+.im1{
+    margin-top: -50px;
+    width: 90%;
+    height: 235px;
+    margin-bottom: 10%;
+    border: solid 5px white;
+}
+.im2{
+    width: 90%;
+    height: 35%;
+    margin-bottom: -80px;
+    border: solid 5px white;
+}
+
+.for2 img{
+    display: flex;
+
+}
+.bid{
+    display: flex;
+}
+.foo{
+    width: 100%;
+    height: 50px;
+    background-color: yellowgreen;
+    position: bottom;
+    border-radius: 0px 0px 30px 30px;
+ 
+}
+.for{
+    width: 90%;
+}
+.big{
+    display: flex;
+}
+/* contenu de carte */
+
+.crt1{
+background-image: url(./image/boni.png);
+background-repeat: no-repeat;
+background-size:;
+width: 90%;
+height: 400px;
+background-color: rgb(50, 179, 205);
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5%;
+border-radius: 30px;
+}
+.crt1{
+        background-image:
+          linear-gradient(
+            to right,
+            rgb(50, 179, 205), #86e0e2, rgb(178, 226, 234)
+          );
+          background-image: url(./image/logo_nazi_boni-removebg-preview2.png);
+          background-size: cover;
+          margin-bottom: 40px;
+
+}
+.crt2{
+    margin-top: 50px;
+width: 90%;
+height: 400px;
+background-color: #86e0e2;
+background-image: url(./image/logoboni3.png);
+background-size: cover;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5%;
+border-radius: 30px;
+padding-top: 10px;
+}
+.crt2 p{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: cooper;
+    color: black;
+    margin-bottom: 150px;
+}
+.ttt{
+    font-family: cooper;
+    font-size: 25px;
+}
+.crt2 ul li{
+   
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: cooper;
+    list-style: none;
+}
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: indigo;
+    /* #4B0082 */
+}
