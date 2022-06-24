@@ -18,6 +18,12 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Se deconnecter') }}
                                     </a>
+</button> <br>
+<button class="btn btn-info">
+    <a href="{{asset('homea')}}">Espace Directeur</a>
+</button>
+<button class="btn btn-info">
+<a href="{{asset('homeb')}}">Espace Seecretaire</a>   
 </button>
 
 <div class="container dd">

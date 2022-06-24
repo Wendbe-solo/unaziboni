@@ -76,9 +76,14 @@ form{
 <div id="mySidenav" class="sidenav ff">
   <a href="#" id="about">Ajouter Sécrétaire</a>
   <a href="#" id="blog">Liste des Sécretaires</a>
-  <a href="#" id="projects">Ajouter Etudiant</a>
-  <a href="#" id="contact">Liste des Etudiant</a>
-  <a href="#" id="dct">Deconnextion</a>
+  <a href="{{route('etudiant.create')}}" id="projects">Ajouter Etudiant</a>
+  <a href="{{route('etudiant')}}" id="contact">Liste des Etudiant</a>
+  <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" id="dct">
+                                        {{ __('Se deconnecter') }}
+                                    </a>
+
 </div>
 
 <div style="margin-left:80px;">

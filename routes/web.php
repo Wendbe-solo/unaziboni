@@ -17,11 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('welcome', function () {
     return view('welcome');
 });
-Route::get('home2', function () {
-    return view('home2');
+
+Route::get('homea', function () {
+    return view('homea');
 });
-Route::get('home3', function () {
-    return view('home3');
+Route::get('homeb', function () {
+    return view('homeb');
 });
 Route::get('page', function () {
     return view('page');

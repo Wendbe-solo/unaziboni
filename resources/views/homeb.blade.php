@@ -44,8 +44,8 @@ body{
     background-size: cover;
 }
 .rr{
- width: 40%;
- height: 450px;
+    width: 30%;
+ height: 330px;
  background-color: rgba(0, 0, 0, 0.566);
 
 }
@@ -66,10 +66,14 @@ form{
 <body>
 
 <div id="mySidenav" class="sidenav ff">
+<a href="{{route('etudiant.create')}}" id="projects">Ajouter Etudiant</a>
+  <a href="{{route('etudiant')}}" id="contact">Liste des Etudiant</a>
+  <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" id="dct">
+                                        {{ __('Se deconnecter') }}
+                                    </a>
 
-  <a href="#" id="projects">Ajouter Etudiant</a>
-  <a href="#" id="contact">Liste des Etudiant</a>
-  <a href="#" id="dct">Deconnextion</a>
 </div>
 
 <div style="margin-left:80px;">
