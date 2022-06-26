@@ -56,6 +56,7 @@
           <div class="carousel-item active big-bg dd">
           <style>
             .dd{
+              
               background-image: url({{asset('ass/img/slide/slide5.jpg')}});
             }
           </style>

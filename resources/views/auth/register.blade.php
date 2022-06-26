@@ -9,30 +9,92 @@
 
 <style>
     .dd {
+        background-repeat: no-repeat;
+  background-size: cover;
         background-image: url({{asset('ass/img/slide/slide5.jpg')}});
-        
-
     }
 
     .cc {
         background-color: rgba(240, 248, 255, 0.721);
-
-
-
-
+    }
+    .epiphan{
+        font-size: 55px;
+        font-weight: bold;
+        font-family: cooper;
     }
 </style>
+
+<section class="app">
+<div id=" ">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm topo">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ __('UMIVERSITE NAZI BONI') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Se deconnecter') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </div>
+</section>
+
 <div class="container dd">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card cc">
 
+                <center>
                 <div class="logo me-auto">
                     <!-- Uncomment below if you prefer to use an image logo -->
 
                     <a href="index.html"><img src="{{asset('./ass/img/slide/images3.jpg')}} " alt="" class=""></a>
 
                 </div>
+                </center>
 
 
                 <div id="epihan">{{ __('ADMINISTRATEUR') }}</div>
