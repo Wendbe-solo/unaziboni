@@ -2,8 +2,9 @@
 
 @section('content')
 <link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
-<div class="my-3 p-3 bg-body rounded shadow-sm">
- <h3 class="centretout">Formulaire d'un(e) Secretaire</h3>
+<body class="body">
+ <div class="bod">
+ <h3 class="centretout">Formulaire d incription d'un(e) Secretaire</h3>
  <style>
     .card{
         border: solid 1px black;
@@ -11,8 +12,20 @@
         background-color: rgba(255, 255, 255, 0.564);
     
     }
-   
+    .body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url({{asset('bac/am.jpg')}});
+  
+  }
+    .cv{
+        width: 80%;
+        margin-left: 10%;
+    }
  </style>
+
+    
+
 
     <div class="mt-4">
 
@@ -31,7 +44,7 @@
         @endif
         
         <div class="container card">
-        <form method="POST" action="{{route('etudiant.ajouter')}}" >
+        <form method="POST" action="{{route('etudiant.ajouter')}}" class="cv">
             @csrf
             <div class="mb-3">
                 <label for="exampleinputEmail" class="">Nom</label>
@@ -62,6 +75,8 @@
        
 
     </div>
+   
 
-</div>
+ </div>
+</body>
 @endsection

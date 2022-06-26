@@ -2,7 +2,25 @@
 
 @section('content')
 <link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
-<div class="my-3 p-3 bg-body rounded shadow-sm">
+<style>
+    .card{
+        border: solid 1px black;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.564);
+    
+    }
+    .cv{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url({{asset('bac/am.jpg')}});
+  
+  }
+</style>
+<div class="body">
     <h3 class="border-bottom pb-2 mb-4">editer d'un etudiant</h3>
 
     <div class="mt-4">
@@ -20,10 +38,10 @@
             @endforeach
         </ul>
         @endif
-        <div class="container centre">
+        <div class="container centre card">
 
         
-        <form method="POST" action="{{route('etudiant.update',['etudiant'=>$etudiant->id])}}">
+        <form method="POST" action="{{route('etudiant.update',['etudiant'=>$etudiant->id])}}" class="cv">
             @csrf
             <input type="hidden" name="_method" value="put">
             <div class="mb-3">
