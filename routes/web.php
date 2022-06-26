@@ -18,6 +18,12 @@ Route::get('welcome', function () {
     return view('welcome');
 });
 
+Route::get('secretaire', function () {
+    return view('secretaire');
+});
+Route::get('insecretaire', function () {
+    return view('insecretaire');
+});
 Route::get('homea', function () {
     return view('homea');
 });
@@ -53,6 +59,7 @@ Route::get('carnet', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/secretaire', [App\Http\Controllers\HomeController::class, 'indexs'])->name('secretaire');
 
 Auth::routes();
 

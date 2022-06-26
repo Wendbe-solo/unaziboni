@@ -4,10 +4,21 @@
 <style>
     .for label{
         margin-top: 0% !important; 
+        font-weight: bold;
     }
     .ctr1{
         width: 70% !important;
         height: 600px !important;
+    }
+    .do{
+        font-family: cooper;
+        font-style: oblique;
+        font-size: 30px;
+    }
+    .dodo{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
     }
 </style>
 <body>
@@ -19,8 +30,8 @@
         <dir>
             <div class="nomc">
                 <center>
-                <p >Carte d'etudiant</p>
-                <p>NAZI BONI</p>
+                <p class="do">Carte d'etudiant</p>
+                <p class="dodo">NAZI BONI</p>
             </center>
             </div>
             <div class="bid">

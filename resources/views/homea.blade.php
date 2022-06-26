@@ -53,7 +53,7 @@ body{
 }
 .rr{
  width: 30%;
- height: 330px;
+ height: 350px;
  background-color: rgba(0, 0, 0, 0.566);
 
 }
@@ -75,7 +75,7 @@ form{
 
 <div id="mySidenav" class="sidenav ff">
   <a href="#" id="about">Ajouter Sécrétaire</a>
-  <a href="#" id="blog">Liste des Sécretaires</a>
+  <a href="{{route('secretaire')}}" id="blog">Liste des Sécretaires</a>
   <a href="{{route('etudiant.create')}}" id="projects">Ajouter Etudiant</a>
   <a href="{{route('etudiant')}}" id="contact">Liste des Etudiant</a>
   <a class="dropdown-item" href="{{ route('logout') }}"
