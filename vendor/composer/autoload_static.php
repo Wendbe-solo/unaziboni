@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836
+class ComposerStaticInitc193893e5735e54db5ae365375cb563a
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -188,8 +188,8 @@ class ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Whoops\\' => 
         array (
@@ -333,8 +333,8 @@ class ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -661,6 +661,7 @@ class ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\EtudiantFactory' => __DIR__ . '/../..' . '/database/factories/EtudiantFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -5657,10 +5658,10 @@ class ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit9ae06a0bac75716e095f7a287c4c6836::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc193893e5735e54db5ae365375cb563a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc193893e5735e54db5ae365375cb563a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc193893e5735e54db5ae365375cb563a::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc193893e5735e54db5ae365375cb563a::$classMap;
 
         }, null, ClassLoader::class);
     }

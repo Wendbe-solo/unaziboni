@@ -1,0 +1,211 @@
+/**
+* Template Name: Delicious - v4.7.1
+* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+
+a:hover {
+  color: #ffb03b;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+/* #topbar {
+  padding: 0;
+  font-size: 15px;
+  height: 50px;
+  transition: all 0.5s;
+  color: #b9059b;
+
+  z-index: 996;
+  color: rgba(202, 21, 163, 0.7); 
+ }  */
+/* #topbar.topbar-transparent {
+  background: transparent;
+} */
+/* #topbar.topbar-scrolled {
+  top: 50px;
+} */
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+ /* #header {
+  top: 50px;
+  height: 70px;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+ background-color:red
+}  */
+ /* #header.header-transparent {
+  background: transparent;
+} 
+ */
+ .img-fluid{
+   width: auto;
+   height: 100px;
+   margin-bottom: 40px;
+ }
+ 
+.logo,img{
+  width: auto;
+  height: 115px; 
+}
+#logo1{
+  margin-left: 81%;
+}
+nav{
+  background: #570147;
+}
+
+
+#header .logo img {
+  /* padding:20px ; */
+  /* margin: top 20px; */
+   max-height: 200px; 
+}
+.bonjour{
+  background:rgb(189, 3, 149);
+  margin-bottom:10px;
+ 
+}
+.epi h1,a{
+  
+  max-width: 20px;
+}
+.epi h1{
+  
+}
+#nous3{
+  margin-top:-5px !important;
+}
+.fin{
+ display: flex;
+ justify-content: space-around;
+ background: #333;
+}
+.pied{
+  margin-top:40px;
+}
+#foot{
+  background: #570147;
+}
+h5{
+  margin-top: 5px;
+  color:white;
+}
+.fin,ul,li{
+ text-decoration: none;
+ color: white;
+
+}
+
+#epihan{
+  color:rgb (246, 238, 238);
+  font-family:cooper;
+}
+
+
+body{
+font-family: sans-serif; 
+/* background-repeat:no-repeat; */
+ background-size:cover;
+
+ 
+
+}
+.big-bg{
+  background-size: cover;
+}
+
+#hero{
+  /* background-image: url(assets/img/slide/slide5.jpg); */
+  /* background-color: #7799d4; */
+}
+
+
+.container {
+width: 388px;
+margin:10% auto;
+border-radius:25px;
+background-coLor:rgba(158, 157, 157, 0.342);
+box-shadow:0 0 17px #333;
+
+}
+
+.header{
+text-align: center;
+padding-top: 75px;
+}
+.header h1 {
+color: #333;
+font-size: 45px;
+margin-bottom : 88px;
+}
+.main{
+text-align: center;
+}
+
+.main input, button {
+  width: 308px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-Left: 48px;
+  box-sizing:border-box;
+  font-size:15px;
+  color:#333;
+  margin-bottom :40px;
+  }
+  .main button{
+   
+   background-color:rgba(241, 139, 6, 0.87);
+  letter-spacing: 1px;
+  font-weight:bold;
+  margin-bottom:70px;
+  border-radius:50px;
+  }
+  .main button:hover {
+    box-shadow:2px 2px 5px rgb(26, 12, 12);
+    background-color:#7799d4;
+
+  }
+  .main input:hover{
+    box-shadow:2px 2px 5px rgb(26, 12, 12);
+    background-color:#7799d4;
+    background-color:#ddd;
+  }
+  .main span{
+  position: relative;
+  }
+  .main i {
+  position: absolute;
+  Left: 15px;
+  color: #333;
+  font-size: 16px
+  }

@@ -1,9 +1,33 @@
-<!-- <div class="my-3 p-3 bg-body rounded shadow-sm">
-    <h3 class="border-bottom pb-2 mb-4">Liste des abonnés</h3>
+@extends('layouts.app')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
+<style>
+       .body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url({{asset('bac/am.jpg')}});
+  
+  }
+  .card{
+        border: solid 1px black;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.564);
+    
+    }
+    .s th,tr{
+        border: solid 1px black;
+    }
+    .t{
+        background-color: rgba(255, 255, 255, 0.564);
+    }
+</style>
+<div class="body">
+    <h3 class="border-bottom pb-2 mb-4">Liste des Etudiants enregistrer</h3>
 
     <div class="mt-4">
         <div class="d-flex justify-content-between mb-4">
-        <a href="{{route('etudiant.create')}}" class="btn btn-primary">Ajouter un nouvel abonnée</a>
+        <a href="{{route('etudiant.create')}}" class="btn btn-primary">Ajouter un(e) Etudiant(e)</a>
         </div>
         @if(session()->has("successDelete"))
         <div class="alert alert-sucess">
@@ -11,7 +35,7 @@
             </div>
         @endif
         <div class="center">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover t">
         <thead>
             <tr>
             <th scope="col">N°</th>
@@ -56,4 +80,5 @@
         </div>
     </div>
 
-</div> -->
+</div>
+@endsection

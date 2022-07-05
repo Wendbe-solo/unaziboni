@@ -1,5 +1,27 @@
-<div class="my-3 p-3 bg-body rounded shadow-sm">
- <h3 class="centretout">Fiche d'abonnement</h3>
+@extends('layouts.app')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('./boot/css/bootstrap.min.css')}}">
+<style>
+    .card{
+        border: solid 1px black;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.564);
+    
+    }
+    .cv{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url({{asset('bac/am.jpg')}});
+  
+  }
+</style>
+<div class="body">
+ <h3 class="centretout">Formulaire d'inscription d'un(e) Etudiant(e)</h3>
 
     <div class="mt-4">
 
@@ -16,9 +38,9 @@
             @endforeach
         </ul>
         @endif
-        <center>
-        <div class="container">
-        <form method="POST" action="{{route('etudiant.ajouter')}}">
+      
+        <div class="container card">
+        <form method="POST" action="{{route('etudiant.ajouter')}}" class="cv">
             @csrf
             <div class="mb-3">
                 <label for="exampleinputEmail" class="form-label">Nom</label>
@@ -64,8 +86,9 @@
             <button type="submit" class="btn btn-primary formula">Enregistre</button>
             <a href="{{route('etudiant')}}"  class="btn btn-danger">Retour</a>
         </form>
-        </center>
+       
 
     </div>
 
 </div>
+@endsection

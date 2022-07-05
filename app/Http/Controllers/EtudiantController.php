@@ -11,7 +11,7 @@ class EtudiantController extends Controller
 {
     public function index(){
         $etudiants = Etudiant::orderBy("nom","asc")->get();
-        return view("esai",compact("etudiants"));
+        return view("etudiant",compact("etudiants"));
     }
     public function create(){
         $etudiants = Etudiant::all();

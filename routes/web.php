@@ -14,33 +14,58 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
 });
 
-Route::get('/esai', function () {
-    return view('esai');
+Route::get('secretaire', function () {
+    return view('secretaire');
+});
+Route::get('insecretaire', function () {
+    return view('insecretaire');
+});
+Route::get('homea', function () {
+    return view('homea');
+});
+Route::get('homeb', function () {
+    return view('homeb');
+});
+Route::get('page', function () {
+    return view('page');
+});
+Route::get('editEtudiant', function () {
+    return view('editEtudiant');
+});
+Route::get('etd', function () {
+    return view('etudiant');
 });
 
-
-Route::get('/directeur', function () {
-    return view('directeur');
+Route::get('/', function () {
+    return view('auth.register');
+});
+Route::get('aut1', function () {
+    return view('aut1');
+});
+Route::get('ins1', function () {
+    return view('ins1');
+});
+Route::get('master', function () {
+    return view('./layouts/master');
+});
+Route::get('carnet', function () {
+    return view('carnet');
 });
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/secretaire', [App\Http\Controllers\HomeController::class, 'indexs'])->name('secretaire');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
-Auth::routes();
-
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get("/esai",[EtudiantController::class,"index"])->name("etudiant");
+Route::get("/etudiant",[EtudiantController::class,"index"])->name("etudiant");
 
 Route::get("/etudiant/create",[EtudiantController::class,"create"])->name("etudiant.create");
 

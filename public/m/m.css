@@ -1,0 +1,35 @@
+/* tete */
+.logo,img{
+    width: auto;
+    height: 115px;
+    background-color: #570147; 
+  }
+  #logo1{
+    margin-left: 90%;
+    margin-top: -144px;
+  }
+/* tete */
+
+/* pied */
+.fin{
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+   }
+   .pied{
+     margin-top:40px;
+   }
+   #foot{
+     background: #570147;
+     background-color: rgba(240, 248, 255, 0.682);
+    
+   
+   }
+   .fin,ul,li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+   
+   }
+   
+/* pied */
